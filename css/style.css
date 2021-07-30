@@ -1,186 +1,215 @@
-*,
-*::after,
-*::before{
-    padding:0;
-    margin:0;
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
-.header{
-    display:flex;
-    width:100%;
-    justify-content: space-between;
-    position:sticky;
+body a {
+    text-decoration: none;
 }
 
-.header-div-1{
+body a:hover {
+    text-decoration: underline;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+.header-div-1 {
     display: flex;
 }
 
-.google-logo{
-    width:92px;
+.google-logo {
+    width: 92px;
     height: 33px;
-    margin:1.5rem 1rem;
+    margin: 1.5rem 1rem;
 }
 
 /* Search Bar Start */
-.search-bar-div{
+
+.search-bar-div {
     position: relative;
     display: flex;
     align-items: center;
-    width:692px;
-    height: 46px;   
-    margin:1.2rem;
-    border-radius:2rem;
-    border:1px solid #00000030;
-    padding:0 15px;
+    width: 692px;
+    height: 46px;
+    margin: 1.2rem;
+    border-radius: 2rem;
+    border: 1px solid #00000030;
+    padding: 0 15px;
     max-width: 584px;
-    font-size:16px;
-}
-
-.search-bar-div:hover{
-    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
-}
-
-.search-bar-div input:focus{
-    outline: none;
-}
-
-.input-div{
-    width:582px;
-    height:39px;
-    display:flex;
-    align-items: center;
-    margin-left:10px;
-}
-
-.input-div input{
-    height:100%;
-    width:100%;
-    border:none;
     font-size: 16px;
 }
 
-.svg-input-clear{
-    width:24px;
-    border-right:1px solid #00000030;
+.search-bar-div:hover {
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
 }
 
-.search-svg-div,.mic-svg-div{
-    display:flex;
+.search-bar-div input:focus {
+    outline: none;
+}
+
+.input-div {
+    width: 582px;
+    height: 39px;
+    display: flex;
     align-items: center;
-    padding:7px;
+    margin-left: 10px;
+}
+
+.input-div input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+}
+
+.svg-input-clear {
+    width: 24px;
+    border-right: 1px solid #00000030;
+}
+
+.search-svg-div, .mic-svg-div {
+    display: flex;
+    align-items: center;
+    padding: 7px;
     justify-self: flex-end;
 }
 
-.search-svg-div img{
-   width:24px;
+.search-svg-div img {
+    width: 24px;
 }
 
-.mic-svg-div img{
-    width:15px;
+.mic-svg-div img {
+    width: 15px;
     height: 18px;
-    margin-left:5px;
+    margin-left: 5px;
 }
+
 /* Search Bar End */
 
-.header-div-2{
-    display:flex;
+.header-div-2 {
+    display: flex;
     align-items: center;
 }
-.settings-svg{
-    width:32px;
-    margin-right:1rem;
+
+.settings-svg {
+    width: 32px;
 }
 
-.settings-svg path,.settings-svg circle{
-    fill:#00000090;
-}
-
-.googleapps-grid-div{
-    padding:5px 0;
-    margin-right:1rem;
-}
-.grid-img:hover, .grid-img:focus{
-    background-color: #00000010;
+.settings-svg:hover, .settings-svg:focus {
+    background-color: #00000030;
     border-radius: 50%;
 }
 
-.google-apps{
+.settings-svg path, .settings-svg circle {
+    fill: #00000090;
+}
+
+/* app grid start */
+
+.googleapps-grid-div * {
+    padding: .8rem;
+}
+
+.googleapps-grid-div {
+    padding: 5px 0;
+}
+
+.grid-img:hover, .grid-img:focus {
+    background-color: #00000030;
+    border-radius: 50%;
+}
+
+.google-apps {
     display: none;
-    position:absolute;
-    top:0;
-    right:0%;
-    width:300px;
-    height:430px;
+    position: absolute;
+    top: 0;
+    right: 0%;
+    width: 300px;
+    height: 430px;
     background-color: white;
-    overflow-y:scroll;
-    margin:3.8rem 1rem;
-    z-index:10;
+    overflow-y: scroll;
+    margin: 3.8rem 1rem;
+    z-index: 10;
     box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
     border-radius: 1rem;
-    padding:0;
+    padding: 0;
     font-size: 10px;
 }
 
-.googleapps-grid-div:focus-within .google-apps{
+.googleapps-grid-div:focus-within .google-apps {
     display: block;
 }
 
-.google-apps ul{
+.google-apps a {
+    padding: 0;
+    color: blue;
+}
+
+.google-apps a:focus, .google-apps a:hover {
+    text-decoration: none;
+}
+
+.google-apps ul {
     display: flex;
     flex-wrap: wrap;
     padding: .8rem 1rem;
 }
 
-.google-apps li{
+.google-apps li {
     display: flex;
-    flex-direction:column;
-    text-align:center;
-    padding:.5rem .67rem;
+    flex-direction: column;
+    text-align: center;
+    padding: .5rem .67rem;
 }
 
-.google-apps li:hover{
+.google-apps li:hover {
     background-color: #00B2EE20;
     border-radius: 1rem;
 }
 
-.google-apps img{
-    width:65px;
+.google-apps img {
+    width: 65px;
 }
 
-.google-apps hr{
+.google-apps hr {
     width: 300px !important;
-    padding:0;
-    margin:.5rem 0;
- 
-}
-
-.google-apps button{
-    margin:1rem 4.8rem;
-    background-color: white;
-    border:1px solid #00000030;
-}
-
-.google-apps a{
     padding: 0;
-    color:blue;
+    margin: .5rem 0;
 }
-.google-apps a:focus,.google-apps a:hover{
-    text-decoration: none;
+
+.google-apps button {
+    margin: 1rem 4.8rem;
+    background-color: white;
+    border: 1px solid #00000030;
 }
+
 ::-webkit-scrollbar {
     width: 8px;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background:#00000030;
-    border-radius: 8px;
-  }
-
-.user-logo{
-    width:32px;
-    height:32px;
-    border-radius:50%;
-    margin-right: 1rem;
 }
+
+::-webkit-scrollbar-thumb {
+    background: #00000030;
+    border-radius: 8px;
+}
+
+/* app grid end */
+
+.user-logo {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.user-logo:hover, .user-logo:focus {
+    background-color: #00000030;
+    border-radius: 50%;
+}
+
