@@ -24,6 +24,7 @@ header {
     position: sticky;
     top: 0;
     background-color: white;
+    padding-right:.8rem;
 }
 
 .header-div-1 {
@@ -209,7 +210,7 @@ header {
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    margin-right:.5rem;
+    margin-right:.8rem;
 }
 
 .user-logo:hover, .user-logo:focus {
@@ -275,6 +276,7 @@ header {
 .no-of-results{
     margin:1rem 9rem;
     white-space: nowrap;
+    color:#4d5156
 }
 
 /* ---- Result contanier start ----  */
@@ -287,13 +289,15 @@ header {
     flex-direction: column;
 }
 
-.search-result-container h2,.search-result-container p{
+.search-result-container p{
     margin-bottom: .5rem;
+    color:#4d5156;
 }
 
 .search-result-container h2{
     font-size: 20px;
     font-weight:normal;
+    margin-bottom: .5rem;
 }
 
 .search-result-container a{
@@ -336,4 +340,101 @@ header {
 
 .more-result{
     padding-left:2rem;
+}
+
+
+.rs-des{
+    white-space: nowrap;
+    margin-bottom: 1rem;
+}
+
+.rs-des p{
+    font-size:16px; 
+    display: flex;
+    justify-content: space-between;
+}
+
+.rs-des img{
+    widht:20px;
+    height: 20px;
+}
+
+.rs-des h2{
+    font-size: 22px;
+    margin-bottom: 1rem;
+    padding-bottom:.5rem;
+    border-bottom: 1px solid #00000020;
+}
+
+.related-search-container{
+    width:100%;
+    display:flex;
+}
+
+.rs-card{
+    dislay:flex;
+    flex-direction: column;
+    margin-left:.5rem;
+    align-items: center;
+}
+
+.rs-img-div{
+    width:100px;
+    height: 100px;
+    background-color: #00000008;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.rs-img-div:hover{
+    cursor: pointer;
+}
+.rs-img-div img{
+   width:90px;
+}
+
+.rs-a-div{
+    display:flex;
+    justify-content:start;
+}
+
+.rs-a-div a{
+    color:#222222;
+}
+
+.seemore-div{
+    height: 36px;
+    width: 300px;
+    margin:3rem auto 1.2rem;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius:2rem;
+    border:1px solid #00000020;
+}
+
+.seemore-arrow{
+    display: flex;
+    align-items: center;
+    padding-left:1rem;
+}
+
+.seemore-div:hover{
+    cursor:pointer;
+}
+.seemore-arrow img{
+    width:20px;
+}
+.seemore-p{
+    margin:0 auto;
+}
+
+.seemore-p p{
+    margin:0;
+    color:#1a0dab;
+}
+
+.seemore-p a:hover{
+    text-decoration: none;
 }
