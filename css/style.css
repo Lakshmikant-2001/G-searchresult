@@ -209,6 +209,7 @@ header {
     width: 32px;
     height: 32px;
     border-radius: 50%;
+    margin-right:.5rem;
 }
 
 .user-logo:hover, .user-logo:focus {
@@ -300,7 +301,7 @@ hr{
 .individual-results-container{
     display:flex;
     flex-direction: column;
-    margin-bottom:1rem;
+    margin-bottom:1.5rem;
 }
 
 .individual-results-container>div{
@@ -329,4 +330,8 @@ hr{
 .subresult-ind div{
     width:301px;
     
+}
+
+.more-result{
+    padding-left:2rem;
 }
