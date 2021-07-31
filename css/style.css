@@ -34,16 +34,14 @@ header {
 /* Search Bar Start */
 
 .search-bar-div {
-    position: relative;
     display: flex;
     align-items: center;
-    width: 692px;
+    width:692px;
     height: 46px;
     margin: 1.2rem;
     border-radius: 2rem;
     border: 1px solid #00000030;
     padding: 0 15px;
-    max-width: 584px;
     font-size: 16px;
 }
 
@@ -213,3 +211,33 @@ header {
     border-radius: 50%;
 }
 
+/* ---- Tools div Start ----- */
+
+.tools-div {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:692px;
+    height: 58px;
+    margin:0 8rem;
+}
+
+.left-tools{
+    display:flex;
+    justify-content:space-evenly;
+}
+
+.left-tools svg{
+    width:16px;
+    height: 16px;
+    padding-right: 3px;
+}
+
+.left-tools div{
+    display:flex;
+    padding:12px;
+}
+
+hr{
+    color:blue;
+}
