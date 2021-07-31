@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family:Arial, sans-serif;
+    font-size:14px;
+}
+
 body a {
     text-decoration: none;
 }
@@ -218,26 +223,110 @@ header {
     justify-content: space-between;
     align-items: center;
     width:692px;
-    height: 58px;
-    margin:0 8rem;
+    height: 38px;
+    margin:0 9rem;
+    color:#5f6368;
 }
 
 .left-tools{
     display:flex;
     justify-content:space-evenly;
-}
-
-.left-tools svg{
-    width:16px;
-    height: 16px;
-    padding-right: 3px;
+    align-items: flex-end;
+    height: 100%;
 }
 
 .left-tools div{
     display:flex;
-    padding:12px;
+    padding:12px 0;
+    margin: 0 12px;
 }
 
+.left-tools div:first-child{
+    color:#1a73e8;
+    border-bottom:3px solid #1a73e8;
+}
+
+.left-tools svg{
+    width:18px;
+    height: 18px;
+    padding-right: 3px;
+}
+
+.left-tools svg:not(first-child){
+    fill:#5f6368;
+}
+
+.right-tools{
+    display: flex;
+    align-items: center;
+    padding:0.2rem 1rem;
+}
+
+.right-tools:hover{
+    border:1px solid #00000030;
+}
 hr{
-    color:blue;
+    color:;
+}
+
+.no-of-results{
+    margin:1rem 9rem;
+}
+
+/* ---- Result contanier start ----  */
+
+
+.search-result-container{
+    width:692px;
+    margin:1.5rem 9rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.search-result-container h2,.search-result-container p{
+    margin-bottom: .5rem;
+}
+
+.search-result-container h2{
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.search-result-container a{
+    color:#1a0dab;
+}
+
+
+.individual-results-container{
+    display:flex;
+    flex-direction: column;
+    margin-bottom:1rem;
+}
+
+.individual-results-container>div{
+    margin-bottom: .8rem;
+}   
+
+.result-head-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.subresult-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left:2rem;
+}
+
+.subresult-ind{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin:.7rem 0;
+}
+
+.subresult-ind div{
+    width:301px;
+    
 }
