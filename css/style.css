@@ -353,9 +353,6 @@ header {
     flex-direction: column;
     flex-wrap: wrap;
     margin:.7rem 0;
-}
-
-.subresult-ind div{
     width:301px;
 }
 
