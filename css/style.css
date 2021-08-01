@@ -457,7 +457,59 @@ header {
     text-decoration: none;
 }
 
+.side-container{
+    position: absolute;
+    display:flex;
+    flex-direction: column;
+    top:200px;
+    left:854px;
+    width:377px;
+    border:1px solid #00000020;
+    border-radius:.5rem;
+}
 
+.side-top{
+    display:flex;
+    padding:1rem;
+    border-bottom:1px solid #00000020;
+    font-size:18px;
+    color:#0000000de;
+}
+
+.side-bottom{
+    display:flex;
+    padding:1rem;
+}
+
+.sb-left{
+    display:flex;
+    align-items: center;
+    margin-right:1rem;
+}
+
+.sb-right{
+    display: flex;
+    flex-grow:3;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sb-right div p:first-of-type{
+    font-size:16px;
+    color:#202124;
+    padding-bottom: 5px;
+}
+
+.sb-right div p:last-of-type{
+    font-size:14px;
+    color:#70757A;
+}
+
+.sb-right img{
+    width:24px;
+    transform: rotate(-90deg);
+    filter:saturate(-100);
+}
 /* ----- footer start -----  */
 
 footer{
