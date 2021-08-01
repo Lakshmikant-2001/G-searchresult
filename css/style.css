@@ -462,7 +462,7 @@ header {
     display:flex;
     flex-direction: column;
     top:200px;
-    left:854px;
+    left:900px;
     width:377px;
     border:1px solid #00000020;
     border-radius:.5rem;
@@ -479,6 +479,11 @@ header {
 .side-bottom{
     display:flex;
     padding:1rem;
+    cursor: pointer;
+}
+
+.side-bottom:hover,.side-bottom:focus{
+    background-color:#00000008;
 }
 
 .sb-left{
