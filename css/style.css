@@ -25,6 +25,7 @@ header {
     top: 0;
     background-color: white;
     padding-right:.8rem;
+    margin-top:.5rem;
 }
 
 .header-div-1 {
@@ -457,6 +458,57 @@ header {
     text-decoration: none;
 }
 
+.paging-container {
+    display:flex;
+    flex-direction: column;
+    margin:1.7rem 0;
+}
+
+.paging-google{
+    display:flex;
+    justify-content: center;
+    margin:0;
+}
+
+.paging-google img{
+    margin:1px;
+}  
+
+.paging-no {
+    display:flex;
+    width: 100%;
+    align-items: center;
+    color:#4285f4;
+}
+.paging-no div:first-of-type{
+    margin-left:230px;
+}
+.paging-no div:last-of-type{
+    margin-left:3.5rem;
+}
+.paging-no ol{
+    display: flex;
+    list-style: none;
+}
+
+.paging-no li:hover,.paging-no li:focus{
+    text-decoration: underline;
+}
+
+.paging-no li{
+    margin:.35rem;
+    counter-increment: custom;
+    cursor:pointer;
+}
+
+.paging-no ol li:before{
+    content:counter(custom) " ";
+}
+
+.paging-no a{
+    color:#4285f4;
+}
+/* ---- side-container start ------- */
 .side-container{
     position: absolute;
     display:flex;
@@ -515,6 +567,9 @@ header {
     transform: rotate(-90deg);
     filter:saturate(-100);
 }
+
+/* ---- side container end ------  */
+
 /* ----- footer start -----  */
 
 footer{
